@@ -479,8 +479,8 @@ class WWID
             if opt[:sequential]
               done_date = next_start - 1
               next_start = item['date']
-            elsif opt[:back].instance_of?(Integer) || opt[:back].instance_of?(Fixnum)
-              done_date = item['date'] + opt[:back]
+            # elsif opt[:back].instance_of?(Integer) || opt[:back].instance_of?(Fixnum)
+              # done_date = item['date'] + opt[:back]
             else
               done_date = opt[:back]
             end
